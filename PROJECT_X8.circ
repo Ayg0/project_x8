@@ -56,9 +56,14 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1510,650)" name="Ground"/>
     <comp lib="0" loc="(410,490)" name="Ground"/>
     <comp lib="0" loc="(410,960)" name="Power"/>
     <comp lib="0" loc="(470,1000)" name="Ground"/>
+    <comp lib="1" loc="(1100,920)" name="NOT Gate"/>
+    <comp lib="1" loc="(1220,940)" name="AND Gate"/>
+    <comp lib="1" loc="(1370,900)" name="AND Gate"/>
+    <comp lib="1" loc="(1370,960)" name="OR Gate"/>
     <comp lib="5" loc="(1040,410)" name="LED"/>
     <comp lib="5" loc="(1040,430)" name="LED"/>
     <comp lib="5" loc="(1040,450)" name="LED"/>
@@ -75,6 +80,19 @@
     <comp lib="5" loc="(1040,700)" name="LED"/>
     <comp lib="5" loc="(1040,720)" name="LED"/>
     <comp lib="5" loc="(1040,740)" name="LED"/>
+    <comp lib="5" loc="(1340,630)" name="DipSwitch"/>
+    <comp lib="5" loc="(1430,270)" name="DipSwitch">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="5" loc="(1550,960)" name="LED"/>
+    <comp lib="5" loc="(1760,320)" name="LED"/>
+    <comp lib="5" loc="(1760,340)" name="LED"/>
+    <comp lib="5" loc="(1760,360)" name="LED"/>
+    <comp lib="5" loc="(1760,380)" name="LED"/>
+    <comp lib="5" loc="(1760,400)" name="LED"/>
+    <comp lib="5" loc="(1760,420)" name="LED"/>
+    <comp lib="5" loc="(1760,440)" name="LED"/>
+    <comp lib="5" loc="(1760,460)" name="LED"/>
     <comp lib="5" loc="(300,480)" name="DipSwitch"/>
     <comp lib="5" loc="(300,940)" name="DipSwitch"/>
     <comp lib="5" loc="(390,120)" name="DipSwitch">
@@ -83,6 +101,13 @@
     <comp lib="5" loc="(390,580)" name="DipSwitch">
       <a name="facing" val="south"/>
     </comp>
+    <comp lib="5" loc="(990,1070)" name="Button">
+      <a name="label" val="One"/>
+    </comp>
+    <comp lib="5" loc="(990,910)" name="Button">
+      <a name="label" val="zer0"/>
+    </comp>
+    <comp loc="(1760,300)" name="I8bit_adder"/>
     <comp loc="(720,150)" name="I8bit_subs"/>
     <comp loc="(720,610)" name="I8bit_subs"/>
     <wire from="(1000,240)" to="(1000,470)"/>
@@ -103,6 +128,60 @@
     <wire from="(1030,560)" to="(1040,560)"/>
     <wire from="(1030,740)" to="(1030,780)"/>
     <wire from="(1030,740)" to="(1040,740)"/>
+    <wire from="(1100,920)" to="(1150,920)"/>
+    <wire from="(1110,960)" to="(1110,1070)"/>
+    <wire from="(1110,960)" to="(1170,960)"/>
+    <wire from="(1150,890)" to="(1150,920)"/>
+    <wire from="(1150,890)" to="(1240,890)"/>
+    <wire from="(1150,920)" to="(1170,920)"/>
+    <wire from="(1220,940)" to="(1320,940)"/>
+    <wire from="(1240,890)" to="(1240,920)"/>
+    <wire from="(1240,920)" to="(1320,920)"/>
+    <wire from="(1260,930)" to="(1260,980)"/>
+    <wire from="(1260,930)" to="(1380,930)"/>
+    <wire from="(1260,980)" to="(1320,980)"/>
+    <wire from="(1270,860)" to="(1270,880)"/>
+    <wire from="(1270,860)" to="(1430,860)"/>
+    <wire from="(1270,880)" to="(1320,880)"/>
+    <wire from="(1350,270)" to="(1350,440)"/>
+    <wire from="(1350,440)" to="(1540,440)"/>
+    <wire from="(1350,600)" to="(1350,630)"/>
+    <wire from="(1350,600)" to="(1540,600)"/>
+    <wire from="(1360,270)" to="(1360,420)"/>
+    <wire from="(1360,420)" to="(1540,420)"/>
+    <wire from="(1360,580)" to="(1360,630)"/>
+    <wire from="(1360,580)" to="(1540,580)"/>
+    <wire from="(1370,270)" to="(1370,400)"/>
+    <wire from="(1370,400)" to="(1540,400)"/>
+    <wire from="(1370,560)" to="(1370,630)"/>
+    <wire from="(1370,560)" to="(1540,560)"/>
+    <wire from="(1370,900)" to="(1380,900)"/>
+    <wire from="(1370,960)" to="(1430,960)"/>
+    <wire from="(1380,270)" to="(1380,380)"/>
+    <wire from="(1380,380)" to="(1540,380)"/>
+    <wire from="(1380,540)" to="(1380,630)"/>
+    <wire from="(1380,540)" to="(1540,540)"/>
+    <wire from="(1380,900)" to="(1380,930)"/>
+    <wire from="(1390,270)" to="(1390,360)"/>
+    <wire from="(1390,360)" to="(1540,360)"/>
+    <wire from="(1390,520)" to="(1390,630)"/>
+    <wire from="(1390,520)" to="(1540,520)"/>
+    <wire from="(1400,270)" to="(1400,340)"/>
+    <wire from="(1400,340)" to="(1540,340)"/>
+    <wire from="(1400,500)" to="(1400,630)"/>
+    <wire from="(1400,500)" to="(1540,500)"/>
+    <wire from="(1410,270)" to="(1410,320)"/>
+    <wire from="(1410,320)" to="(1540,320)"/>
+    <wire from="(1410,480)" to="(1410,630)"/>
+    <wire from="(1410,480)" to="(1540,480)"/>
+    <wire from="(1420,270)" to="(1420,300)"/>
+    <wire from="(1420,300)" to="(1540,300)"/>
+    <wire from="(1420,460)" to="(1420,630)"/>
+    <wire from="(1420,460)" to="(1540,460)"/>
+    <wire from="(1430,860)" to="(1430,960)"/>
+    <wire from="(1430,960)" to="(1550,960)"/>
+    <wire from="(1510,620)" to="(1510,650)"/>
+    <wire from="(1510,620)" to="(1540,620)"/>
     <wire from="(310,120)" to="(310,290)"/>
     <wire from="(310,290)" to="(500,290)"/>
     <wire from="(310,450)" to="(310,480)"/>
@@ -246,10 +325,13 @@
     <wire from="(980,520)" to="(1040,520)"/>
     <wire from="(980,630)" to="(1040,630)"/>
     <wire from="(980,630)" to="(980,680)"/>
+    <wire from="(990,1070)" to="(1110,1070)"/>
     <wire from="(990,260)" to="(990,500)"/>
     <wire from="(990,500)" to="(1040,500)"/>
     <wire from="(990,650)" to="(1040,650)"/>
     <wire from="(990,650)" to="(990,700)"/>
+    <wire from="(990,910)" to="(990,920)"/>
+    <wire from="(990,920)" to="(1070,920)"/>
   </circuit>
   <circuit name="f_1bit_adder">
     <a name="appearance" val="logisim_evolution"/>
