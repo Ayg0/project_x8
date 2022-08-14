@@ -9,3 +9,5 @@
 - SUBSTRUCTURE
 
 - 8 BIT REGISTER
+
+- 256 Byte ram (you can address is with 8 bits).
